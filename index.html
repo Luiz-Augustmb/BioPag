@@ -17,44 +17,50 @@
   <script src="script.js"></script>
 </head>
 <body>
-  <div class="card-body">
-    <div id="calc-contain">
-      <div class="calculator">
-          <form name="calculator" onsubmit="return false;">
-              <br>
-              <input class="display" type="text" name="answer" id="answer" readonly />
-              <table>
-                <br><br>
-                  <tr>
-                      <td> <button class="btn btn-light"  type="button" value="7" onclick="appendNumber('7')">7</button> </td>
-                      <td> <button class="btn btn-light"  type="button" value="8" onclick="appendNumber('8')">8</button> </td>
-                      <td> <button class="btn btn-light"  type="button" value="9" onclick="appendNumber('9')">9</button> </td>
-                  </tr>
+  <div class="container">
+    <div class="phone">
+      <div class="screen">
+        <div class="card-body">
+          <div id="calc-contain">
+            <div class="calculator">
+                <form name="calculator" onsubmit="return false;">
+                    <br>
+                    <input class="display" type="text" name="answer" id="answer" readonly />
+                    <table>
+                      <br><br>
+                        <tr>
+                            <td> <button class="btn btn-light"  type="button" value="7" onclick="appendNumber('7')">7</button> </td>
+                            <td> <button class="btn btn-light"  type="button" value="8" onclick="appendNumber('8')">8</button> </td>
+                            <td> <button class="btn btn-light"  type="button" value="9" onclick="appendNumber('9')">9</button> </td>
+                        </tr>
 
-                  <tr>
-                      <td> <button class="btn btn-light"  type="button" value="4" onclick="appendNumber('4')">4</button> </td>
-                      <td> <button class="btn btn-light"  type="button" value="5" onclick="appendNumber('5')">5</button> </td>
-                      <td> <button class="btn btn-light"  type="button" value="6" onclick="appendNumber('6')">6</button> </td>
-                  </tr>
+                        <tr>
+                            <td> <button class="btn btn-light"  type="button" value="4" onclick="appendNumber('4')">4</button> </td>
+                            <td> <button class="btn btn-light"  type="button" value="5" onclick="appendNumber('5')">5</button> </td>
+                            <td> <button class="btn btn-light"  type="button" value="6" onclick="appendNumber('6')">6</button> </td>
+                        </tr>
 
-                  <tr>
-                      <td> <button class="btn btn-light"  type="button" value="1" onclick="appendNumber('1')">1</button> </td>
-                      <td> <button class="btn btn-light"  type="button" value="2" onclick="appendNumber('2')">2</button> </td>
-                      <td> <button class="btn btn-light"  type="button" value="3" onclick="appendNumber('3')">3</button> </td>
-                  </tr>
+                        <tr>
+                            <td> <button class="btn btn-light"  type="button" value="1" onclick="appendNumber('1')">1</button> </td>
+                            <td> <button class="btn btn-light"  type="button" value="2" onclick="appendNumber('2')">2</button> </td>
+                            <td> <button class="btn btn-light"  type="button" value="3" onclick="appendNumber('3')">3</button> </td>
+                        </tr>
 
-                  <tr>
-                      <td> <button class="btn btn-warning"  type="button" onclick="removeLastDigit()"> <i class="bi bi-arrow-return-left"></i></button> </td>
-                      <td> <button class="btn btn-light"  type="button" value="0" onclick="appendNumber('0')">0</button> </td>
-                      <td> <button style="color: black;" class="btn btn-danger"  type="button" onclick="clearValue()"> <i class="bi bi-x-lg"></i> </button>  </td>
-                  </tr>
+                        <tr>
+                            <td> <button class="btn btn-warning"  type="button" onclick="removeLastDigit()"> <i class="bi bi-arrow-return-left"></i></button> </td>
+                            <td> <button class="btn btn-light"  type="button" value="0" onclick="appendNumber('0')">0</button> </td>
+                            <td> <button style="color: black;" class="btn btn-danger"  type="button" onclick="clearValue()"> <i class="bi bi-x-lg"></i> </button>  </td>
+                        </tr>
 
-                  <tr>
-                    <td colspan="3"> <a href="#" onclick="goToSecondPage()"><button class="btn btn-success" type="button"> <i class="bi bi-check-lg"> </i> </button></a> </td>
-                  </tr>
+                        <tr>
+                          <td colspan="3"> <a href="#" onclick="goToSecondPage()"><button class="btn btn-success" type="button"> <i class="bi bi-check-lg"> </i> </button></a> </td>
+                        </tr>
 
-              </table>
-          </form>
+                    </table>
+                </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
